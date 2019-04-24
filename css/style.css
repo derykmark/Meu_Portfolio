@@ -71,7 +71,7 @@ body{
   flex-flow: column;
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 .redes_soci ul li a{
   display: contents;
@@ -82,13 +82,34 @@ body{
 .minha_foto{
   display: flex;
   object-fit: cover;
-  height: 400px;
-  width:400px;
+  height: 260px;
+  width:260px;
   transform: rotate(270deg);
   border-radius: 30%;
   margin-top:10px;
   margin-left: 10px;
+  display: -webkit-inline-box;
 }
+.formação_foto1{
+  height: 57px;
+  width: 322px;
+  object-fit: cover;
+  display: -webkit-inline-box;
+}
+.formação_foto2{
+  width: 297px;
+  height: 69px;
+  padding-top: 15px;
+  object-fit: cover;
+  display: -webkit-inline-box;
+}
+.formação_a{
+  text-decoration: none;
+  color: black;
+  font-family: auto;
+  font-size: larger;
+}
+
 body, div,
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
@@ -197,6 +218,8 @@ h1 {
 p {
   width: 90%;
   margin: 0 auto;
+  font-family: auto;
+  font-size: large;
 }
 
 
