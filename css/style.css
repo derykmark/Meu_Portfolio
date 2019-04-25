@@ -91,10 +91,7 @@ body{
   display: -webkit-inline-box;
 }
 .formação_foto1{
-  height: 57px;
   width: 322px;
-  object-fit: cover;
-  display: -webkit-inline-box;
 }
 .formação_foto2{
   width: 297px;
@@ -108,7 +105,444 @@ body{
   color: black;
   font-family: auto;
   font-size: larger;
+  display: inline-grid;
 }
+
+.about{
+  padding: 5vh;
+}
+
+/* ----------------------------------------------------------
+ * 				CONFIGURAÇÕES BÁSICAS DA PÁGINA
+ * ---------------------------------------------------------- */
+html{
+	margin: 0px;
+	padding: 0px;
+
+	scroll-behavior: smooth; /*não suportado por edge e safari*/
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+
+	font-family: monospace;
+	font-size: 18px;
+	color: black;
+	text-align: justify;
+	background-color: white;
+}
+
+/* ----------------------------------------------------------
+ * 				CONFIGURAÇÕES BARRA DE NAVEGAÇÃO
+ * ---------------------------------------------------------- */
+#icon_mobile{
+	position: fixed;
+	margin: 20px;
+	z-index: 2;
+	display: none;
+
+	/*background-color: white;	*/
+}
+
+#icon_menu_open, #icon_menu_close{
+	margin: 15px 0px 0px 15px;
+}
+
+nav{
+	display: block;
+	position: fixed;
+	padding: 0px;
+	margin: 0px;
+	width: 180px;
+	height: 100%;
+	z-index: 1;
+
+	border: solid 1px;
+	background-color: #646d5c;
+}
+
+nav ul{
+	margin: 180px 0px 0px 0px; /*cima baixo direita esquerda*/
+	padding: 0px;
+
+	list-style-type: none;
+}
+
+nav ul li{
+	position: relative;
+	border-top: solid 1px;
+}
+
+nav ul li:last-child{
+	border-bottom: solid 1px;
+}
+
+nav ul li a{
+	display: block;
+	padding: 8px;
+
+	text-decoration: none;
+	color: black;
+	text-align: center;
+
+	transition: 0.8s;
+}
+
+nav ul li ul{
+	margin: 0px;
+	padding: 0px;
+	display: none;
+
+	font-size: 12px;
+}
+
+nav ul li ul a{
+	padding-left: 28px;
+	text-align: justify;
+}
+
+nav ul li a:hover{
+	background-color: #E4B363;
+	color: white;
+}
+
+nav ul li:hover{
+	background-color: #f2f2f2;
+	transition-duration: 0.3s;
+}
+
+nav ul li ul li a:hover{
+	background-color: #E4B363;
+	text-align: right;
+}
+
+nav ul li:hover ul{
+	display: block;
+}
+
+/*  ----------------------------------------------------------
+ * 				CONFIGURAÇÕES BÁSICAS DO CORPO
+ * ---------------------------------------------------------- */
+#article_about, #article_education, #article_skills, #article_portifolio, #article_contact{
+	border: solid 2px;
+	padding: 10px 50px 50px 50px;
+	margin: 25px 25px 80px 25px;
+
+	border-radius: 25px;
+	background-color: white;
+}
+.section_expe{
+  height: 10px;
+}
+
+.ancoras{
+	visibility: hidden;
+	border: solid 1px;
+}
+
+/* ----------------------------------------------------------
+ * 	 CONFIGURAÇÕES BÁSICAS PAGINA EDUCAÇÃO E COMP. TECNICAS
+ * ---------------------------------------------------------- */
+#quick_view_medio, #quick_view_tecno, #quick_view_superior, #quick_view_tools, #quick_view_language, #quick_view_database{
+	margin-top: 8px;
+	height: 20px;
+	width: 100%;
+	padding: 8px;
+
+	background-color: #5B6057;
+	color: white;
+	border: solid 1px black;
+}
+
+#full_view_medio, #full_view_tecno, #full_view_superior{
+	margin-bottom: 3px;
+	width: 100%;
+	padding: 8px;
+	display: none;
+	opacity: 1;
+
+	border: solid 1px;
+	background-color: #f2f2f2;
+
+	font-size: 14px;
+
+}
+
+#full_view_tools, #full_view_language, #full_view_database{
+	margin-bottom: 3px;
+	width: 101.9%;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	column-count: 2;
+	display: none;
+
+	border: solid 1px;
+	background-color: #f2f2f2;
+
+	font-size: 14px;
+}
+
+#full_view_tools ul, #full_view_language ul, #full_view_database ul{
+	margin: 0px;
+	list-style-type: none;
+	padding-right: 40px;
+}
+
+/* ----------------------------------------------------------
+ *  CONFIGURAÇÕES BARRA/EXPERIENCIA DA PAGINA COMP. TECNICAS
+ * ---------------------------------------------------------- */
+.container{
+	width: 100%;
+	height: 7px;
+
+	background-color: #A5907E;
+	border: solid 1px;
+}
+
+#windows, #word, #excel, #notepad, #brackets{
+	height: 7px;
+	width: 95%;
+
+	background-color: #550C18;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#powerPoint, #visio, #visualStudio, #cygwing, #netBeans, #server, #developer{
+	height: 7px;
+	width: 70%;
+
+	background-color: #E4B363;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#publisher, #sway, #git, #mac{
+	height: 7px;
+	width: 40%;
+
+	background-color: #E4B363;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#cSharp, #javaScript{
+	height: 7px;
+	width: 65%;
+
+	background-color: #E4B363;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#google, #edge{
+	height: 7px;
+	width: 95%;
+
+	background-color: #550C18;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#firefox, #explore, #html, #css, #c{
+	height: 7px;
+	width: 80%;
+
+	background-color: #550C18;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#oneDrive, #dropBox{
+	height: 7px;
+	width: 80%;
+
+	background-color: #550C18;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#skype, #photoshop, #java{
+	height: 7px;
+	width: 45%;
+
+	background-color: #E4B363;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+/*  ----------------------------------------------------------
+ * 				CONFIGURAÇÕES PAGINA HOME
+ * ---------------------------------------------------------- */
+
+#article_home{
+
+	height: 100vh;
+	background: url(bg_home5.jpg) no-repeat center center fixed;
+	background-size: cover;
+
+}
+
+#section_home{
+	padding: 40px;
+	line-height: 0.2px;
+	border: 8px double #999;
+	padding: 10px 50px 50px 50px;
+	margin: 18px 10px 80px 10px;
+
+}
+
+h1, #titulo{
+	padding: 15px 0px 15px 0px;
+
+	font-size: 56px;
+	font-weight: bold;
+}
+
+h2{
+	padding: 15px 0px 15px 0px;
+
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#subtitulo{
+	padding: 15px 0px 0px 0px;
+
+	font-size: 20px;
+	margin-top: -40px;
+}
+
+#titulo{
+	margin-top: 180px;
+}
+
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
+
+/*  ----------------------------------------------------------
+ * 				CONFIGURAÇÕES PAGINA CONTATO
+ * ---------------------------------------------------------- */
+form{
+	padding: 10px;
+
+	text-align: center;
+	border: solid 1px;
+}
+
+input, textarea{
+	width: -webkit-fill-available;
+	padding: 7px;
+}
+
+textarea{
+	height: 140px;
+}
+
+.enviar input{
+	height: 40px;
+	width: 150px;
+
+	background-color: #646d5c;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	border: solid 1px;
+
+	cursor: pointer;
+}
+
+.enviar input:hover{
+	background-color:#E4B363;
+	border: solid 1px black;
+	color: white;
+}
+
+/*  ----------------------------------------------------------
+ * 			CONFIGURAÇÕES RESPONSIVIDADE CELULARES
+ * ---------------------------------------------------------- */
+@media screen and (max-width: 728px){
+
+	#nav_desktop{
+		display: none;
+	}
+
+	#nav_mobile{
+		width: 0%;
+		visibility: hidden;
+	}
+
+	#nav_mobile ul li ul a, nav ul li ul li a:hover{
+		text-align: center;
+	}
+
+	#icon_mobile{
+		display: block;
+	}
+
+	#icon_menu_close{
+		display: none;
+	}
+
+	#article_about, #article_education, #article_skills, #article_portifolio, #article_contact{
+		padding: 50px;
+
+
+	}
+
+	#article_home{
+		height: 70vh;
+		line-height: 0.2px;
+		border: 8px double #999;
+		/*border: 8px outset #999;*/
+		padding: 10px 50px 50px 50px;
+		margin: 18px 10px 80px 10px;
+	}
+
+	#subtitulo{
+		padding: 15px 0px 0px 0px;
+		font-size: 15px;
+		margin-top: -40px;
+	}
+
+	#titulo{
+		padding: 0px 0px 15px 0px;
+		font-size: 27px;
+		font-weight: bold;
+	}
+}
+
+@media screen and (max-width: 1033px) and (min-width: 915px){
+
+	#subtitulo{
+		padding: 15px 0px 0px 0px;
+		font-size: 20px;
+		margin-top: -40px;
+	}
+
+	#titulo{
+		padding: 0px 0px 15px 0px;
+		font-size: 45px;
+		font-weight: bold;
+	}
+}
+
+@media screen and (max-width: 915px) and (min-width: 728px){
+
+	#subtitulo{
+		padding: 20px 0px 0px 0px;
+		font-size: 13px;
+		margin-top: -40px;
+	}
+
+	#titulo{
+		padding: 0px 0px 15px 0px;
+		font-size: 27px;
+		font-weight: bold;
+	}
+}
+
 
 body, div,
 h1, h2, h3, h4, h5, h6,
@@ -208,7 +642,7 @@ section{
   border-bottom: 1px solid #999;
   text-align: center;
   padding: 30px 0 0;
-  height: 600px;
+  height: 800px;
   width: 100%;
 }
 h1 {
@@ -351,9 +785,6 @@ header {
     border-top: 0;
     float: left;
     margin: 0;
-  }
-  .about{
-    height:600px;
   }
 }
 
