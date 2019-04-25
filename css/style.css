@@ -117,17 +117,6 @@ html{
 	scroll-behavior: smooth; /*não suportado por edge e safari*/
 }
 
-body{
-	margin: 0px;
-	padding: 0px;
-
-	font-family: monospace;
-	font-size: 18px;
-	color: black;
-	text-align: justify;
-	background-color: white;
-}
-
 /* ----------------------------------------------------------
  * 				CONFIGURAÇÕES BARRA DE NAVEGAÇÃO
  * ---------------------------------------------------------- */
@@ -171,17 +160,6 @@ nav ul li{
 
 nav ul li:last-child{
 	border-bottom: solid 1px;
-}
-
-nav ul li a{
-	display: block;
-	padding: 8px;
-
-	text-decoration: none;
-	color: black;
-	text-align: center;
-
-	transition: 0.8s;
 }
 
 nav ul li ul{
@@ -570,7 +548,7 @@ a:hover {
   margin: 0;
   padding: 0;
   width: 100%;
-  display: -webkit-box;
+  display: block;
   list-style: none;
 }
 
@@ -785,7 +763,9 @@ header {
     float: right;
     display: flex;
   }
-
+  .nav-collapse ul{
+    display: -webkit-box;
+  }
 }
 
 .nav-collapse ul ul a {
