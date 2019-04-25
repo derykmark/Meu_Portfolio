@@ -80,7 +80,6 @@ body{
   padding-top: 62px;
 }
 .minha_foto{
-  display: flex;
   object-fit: cover;
   height: 260px;
   width:260px;
@@ -88,7 +87,6 @@ body{
   border-radius: 30%;
   margin-top:10px;
   margin-left: 10px;
-  float: right;
 }
 .formação_foto1{
   width: 322px;
@@ -783,6 +781,11 @@ header {
     float: left;
     margin: 0;
   }
+  .minha_foto{
+    float: right;
+    display: flex;
+  }
+
 }
 
 .nav-collapse ul ul a {
